@@ -1,5 +1,6 @@
 array_clockwise
 ===============
+[![Build Status](https://travis-ci.org/debbbbie/array_clockwise.png?branch=master)](https://travis-ci.org/debbbbie/array_clockwise)
 
 对于所给矩阵，按顺时针方向逐层索引每个元素
 
