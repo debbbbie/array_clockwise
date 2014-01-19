@@ -23,6 +23,17 @@ describe ArrayClockwise do
       i += 1
     end
   end
+  it "#map" do
+    r = ArrayClockwise.new [
+                               [ 0, 1, 2, 3, 4],
+                               [15,16,17,18, 5],
+                               [14,23,24,19, 6],
+                               [13,22,21,20, 7],
+                               [12,11,10, 9, 8]
+                           ]
+    i = 0
+    (r.map{|data| data } == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]).should be(true)
+  end
   it "#each_with_index" do
     r = ArrayClockwise.new [
                                [ 0, 1, 2, 3, 4],
